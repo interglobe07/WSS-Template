@@ -3,52 +3,45 @@
 (*** Wolfram Notebook File ***)
 (* http://www.wolfram.com/nb *)
 
-(* CreatedBy='WolframDesktop 12.0' *)
+(* CreatedBy='Mathematica 11.3' *)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[       161,          7]
-NotebookDataLength[     87574,       1839]
-NotebookOptionsPosition[     83102,       1757]
-NotebookOutlinePosition[     83467,       1773]
-CellTagsIndexPosition[     83424,       1770]
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     87678,       1851]
+NotebookOptionsPosition[     82491,       1750]
+NotebookOutlinePosition[     83459,       1783]
+CellTagsIndexPosition[     83390,       1778]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell[TextData[StyleBox["The Keynesian aggregate demand(AD) model with \
+Cell[TextData[StyleBox["The Keynesian Aggregate Demand (AD) models with \
 Mathematica", "Title"]], "Title",
- CellChangeTimes->{{3.7697941476635*^9, 3.7697941526235037`*^9}, {
-   3.7697942821745033`*^9, 3.769794284798503*^9}, 3.769794430997511*^9, 
-   3.770419568368788*^9, {3.770419781291224*^9, 3.77041978183965*^9}, {
-   3.770422404216395*^9, 3.770422421116105*^9}, {3.7704224815241995`*^9, 
-   3.7704230933165674`*^9}, {3.770491604022517*^9, 3.770491607319891*^9}, {
-   3.7704934991713295`*^9, 3.7704935105379224`*^9}, {3.7704935642904515`*^9, 
-   3.770493567399762*^9}, {3.770493601947867*^9, 3.7704939250036197`*^9}, {
-   3.770493958045272*^9, 3.770494000843733*^9}, {3.770494066828455*^9, 
-   3.770494088755703*^9}, {3.770494120368458*^9, 3.7704941300300813`*^9}, {
-   3.7704941924591217`*^9, 3.770494754594179*^9}, {3.7704948675907173`*^9, 
-   3.7704949062066693`*^9}, {3.770496061459588*^9, 3.770496062928607*^9}, 
-   3.7704961236576014`*^9, {3.7704989994098496`*^9, 3.7704989999567347`*^9}, {
-   3.7704990836290255`*^9, 3.7704991040936375`*^9}, 3.7705044489855003`*^9, 
-   3.77050456290739*^9, {3.77050745598289*^9, 3.770507509129359*^9}, {
-   3.770507581328038*^9, 3.7705076230384703`*^9}, {3.770507674527997*^9, 
-   3.7705076983831377`*^9}, {3.7706707189162827`*^9, 3.770670728835805*^9}, {
-   3.770676181437128*^9, 3.7706761874214907`*^9}, {3.7706794705269117`*^9, 
-   3.7706794767609053`*^9}, 
-   3.7706797290619082`*^9},ExpressionUUID->"255f30a9-6e03-48c4-863c-\
-9f42e615704d"],
+ CellChangeTimes->{{3.770055572438499*^9, 3.7700555729498453`*^9}, {
+   3.770055604008165*^9, 3.7700556066618843`*^9}, {3.770373672636671*^9, 
+   3.7703737875292807`*^9}, {3.770742020985849*^9, 3.770742044437849*^9}, 
+   3.770742133070859*^9, {3.7707422082988524`*^9, 3.7707422153538494`*^9}},
+ CellTags->"Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd"],
+
+Cell["Hee-Young Shin", "Text",
+ CellChangeTimes->{{3.549624168509506*^9, 3.549624171985794*^9}, {
+  3.549624508772977*^9, 3.549624510775043*^9}, {3.5498187159613867`*^9, 
+  3.5498187170087957`*^9}, {3.549819049020514*^9, 3.5498190533440437`*^9}, {
+  3.77005561844785*^9, 3.7700556489651537`*^9}, {3.770742056338876*^9, 
+  3.770742059690844*^9}},ExpressionUUID->"94536f76-3fd2-4bf6-b228-\
+fa93ec9acae9"],
 
 Cell[CellGroupData[{
 
 Cell["1. Introduction", "Section",
  CellChangeTimes->{{3.770507693183112*^9, 3.770507730286379*^9}, 
-   3.7705874704123216`*^9},ExpressionUUID->"3a43a84e-cf5b-4a6a-b33c-\
-3275f212119f"],
+   3.7705874704123216`*^9},ExpressionUUID->"bb9dd0da-48ea-4aa1-8857-\
+e7194a9ae34b"],
 
 Cell["\<\
 One foundational macroeconomic model is the Keynesian Aggregate Demand (AD) \
@@ -78,8 +71,8 @@ showing some interactive features of the economic models. \
    3.7706776274105787`*^9}, {3.7706776578950033`*^9, 
    3.7706777305668783`*^9}, {3.770679531062907*^9, 3.7706795323559017`*^9}, {
    3.7706796940759087`*^9, 
-   3.770679723643906*^9}},ExpressionUUID->"a17a3bae-a42c-44d9-96a6-\
-3c100e43538a"]
+   3.770679723643906*^9}},ExpressionUUID->"212ce15c-4959-4d74-b96d-\
+74b49e5f8891"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -90,8 +83,8 @@ Cell["2. Building a baseline AD model", "Section",
    3.770502098274883*^9}, 3.7705075865300245`*^9, {3.770507627210271*^9, 
    3.770507646980179*^9}, {3.770507748888275*^9, 3.770507753200757*^9}, {
    3.7705798819275446`*^9, 3.7705798900880046`*^9}, 
-   3.770587475171324*^9},ExpressionUUID->"35a5f7ab-b7d8-436c-a09a-\
-06f5ce87ba87"],
+   3.770587475171324*^9},ExpressionUUID->"ee51fc41-7f5e-4d31-b8be-\
+b567da419c5c"],
 
 Cell[TextData[{
  "The mathematical structure of this model is relatively simple and at this \
@@ -107,14 +100,14 @@ part of consumption(\[OpenCurlyDoubleQuote]",
   FormBox[
    RowBox[{
     SubscriptBox["c", "0"], "\"\<)\>"}], TraditionalForm]],ExpressionUUID->
-  "9f337931-b3d3-4beb-a7da-3ee11e3960b6"],
+  "f4e809dd-5994-4341-b037-50023b4c4aa8"],
  " and the other variable part of consumption. If we assume that there is a \
 statistically stable correlation between households\[CloseCurlyQuote] average \
 consumption habit (\[OpenCurlyDoubleQuote]",
  Cell[BoxData[
   FormBox[
    SubscriptBox["c", "1"], TraditionalForm]],ExpressionUUID->
-  "41737e02-2c77-4793-b076-b08f1b99ce0d"],
+  "d71f1c28-32da-4383-a8c9-98b904a92ce4"],
  "\[CloseCurlyDoubleQuote]) and their income (\[OpenCurlyDoubleQuote]Y\
 \[CloseCurlyDoubleQuote]) and the variable part of consumption is a function \
 of household income (\[OpenCurlyDoubleQuote]",
@@ -122,7 +115,7 @@ of household income (\[OpenCurlyDoubleQuote]",
   FormBox[
    RowBox[{
     SubscriptBox["c", "1"], "Y", "\"\<)\>"}], TraditionalForm]],
-  ExpressionUUID->"06e745be-e8d3-47c7-9714-51bfd443619d"],
+  ExpressionUUID->"c36848c4-5f8d-4d7e-b870-9d9eb369e2b4"],
  ", we can hypothesize the following behavioral equation, that is,"
 }], "Text",
  CellChangeTimes->{{3.770507765858628*^9, 3.7705077828555927`*^9}, {
@@ -133,8 +126,8 @@ of household income (\[OpenCurlyDoubleQuote]",
    3.770585387627601*^9}, {3.7705857318465757`*^9, 3.7705858226325617`*^9}, {
    3.770672552411967*^9, 3.7706725642742414`*^9}, {3.770673434934792*^9, 
    3.77067343773168*^9}, {3.770676210077727*^9, 
-   3.770676214249629*^9}},ExpressionUUID->"58b4840b-0d3f-4a7d-90a2-\
-5403758b32f7"],
+   3.770676214249629*^9}},ExpressionUUID->"f1fcc30c-6e7f-44e3-92f9-\
+69a2395e46b1"],
 
 Cell[BoxData[
  RowBox[{"AD", "=", 
@@ -148,25 +141,25 @@ Cell[BoxData[
     TraditionalForm], "+", "pbi"}]}]], "Input",
  CellChangeTimes->{{3.7706733755735846`*^9, 3.7706734098075595`*^9}, {
   3.770673607136728*^9, 3.7706736101528482`*^9}, {3.7706762452027426`*^9, 
-  3.77067626449963*^9}},ExpressionUUID->"40294b4e-95d2-40f2-95f8-\
-99a5277c9f61"],
+  3.77067626449963*^9}},ExpressionUUID->"cb512737-81dd-4bac-abf0-\
+3597c15d0a85"],
 
 Cell[TextData[{
  "Here \"",
  Cell[BoxData[
   FormBox[
    SubscriptBox["c", "0"], TraditionalForm]],ExpressionUUID->
-  "f7455ce1-da27-45d0-aa06-45c436d40154"],
+  "6f1d909a-fbf2-4cda-bcba-22f6d76df835"],
  "\" denotes an autonomous consumption, \"",
  Cell[BoxData[
   RowBox[{
    SubscriptBox["c", "1"], "Y"}]],ExpressionUUID->
-  "c670cf5a-9b9d-4889-95ea-e08891445075"],
+  "76660b46-22f2-4e94-a30f-546c03c3c79d"],
  "\" represents a variable part of consumption, in which ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["c", "1"], TraditionalForm]],ExpressionUUID->
-  "559d9a38-feef-47d1-b72f-f55f985c6a54"],
+  "1c1121e9-659f-4974-8ad0-0a45377c830e"],
  " and Y denote marginal propensity to consume and income, respectively. \
 \[OpenCurlyDoubleQuote]pbi\[CloseCurlyDoubleQuote] as defined earlier \
 represents private business investment, which is assumed to be given in this \
@@ -184,7 +177,7 @@ Y. In other words, ",
   CellChangeTimes->{{3.770499014083707*^9, 3.7704990147398767`*^9}, {
    3.770501997461377*^9, 3.770502009864711*^9}, {3.7705020564756594`*^9, 
    3.770502098274883*^9}},ExpressionUUID->
-  "6d81ffdc-42cf-4dbf-874e-da12c91703e9"],
+  "2072ea4b-45be-40a4-ac35-5013a3b85900"],
  ". Solving the last equation for Y, we get  "
 }], "Text",
  CellChangeTimes->{{3.770507765858628*^9, 3.7705077828555927`*^9}, {
@@ -197,8 +190,8 @@ Y. In other words, ",
    3.7706726151850433`*^9}, {3.770672647894949*^9, 3.7706726517386985`*^9}, {
    3.7706727732595186`*^9, 3.7706727748219376`*^9}, {3.770673457085187*^9, 
    3.7706734716451983`*^9}, 3.7706735155553284`*^9, {3.7706762950465546`*^9, 
-   3.770676344421505*^9}},ExpressionUUID->"f17a3b37-e006-480e-a2cc-\
-8a9cc261958b"],
+   3.770676344421505*^9}},ExpressionUUID->"6ecca66e-8890-445e-a855-\
+43fb54589d11"],
 
 Cell[BoxData[
  RowBox[{
@@ -237,8 +230,8 @@ Cell[BoxData[
        SubscriptBox["c", "0"], "+", "pbi"}], "]"}]}]}]}]}]], "Input",
  CellChangeTimes->{{3.770673484746767*^9, 3.77067354535581*^9}, {
   3.7706736003933086`*^9, 3.770673615324724*^9}, {3.770676356734581*^9, 
-  3.7706763934221277`*^9}},ExpressionUUID->"e5764151-2249-4a43-99ba-\
-2207e394ab86"],
+  3.7706763934221277`*^9}},ExpressionUUID->"74db393e-3585-4f26-9417-\
+ec4555f60ef0"],
 
 Cell[TextData[{
  "At a given point in time, the equilibrium output-income, which is \
@@ -248,14 +241,14 @@ determined by the aggregate demand, is a function of multiplier (\"1/(1-",
   CellChangeTimes->{{3.770499014083707*^9, 3.7704990147398767`*^9}, {
    3.770501997461377*^9, 3.770502009864711*^9}, {3.7705020564756594`*^9, 
    3.770502098274883*^9}},ExpressionUUID->
-  "71281097-dde1-4984-80b8-b437670e51db"],
+  "5ffe50a2-7c6e-4eb1-863d-621d612a6e01"],
  "\") and the constant spending components (\"",
  Cell[BoxData[
   SubscriptBox["c", "0"]],
   CellChangeTimes->{{3.770499014083707*^9, 3.7704990147398767`*^9}, {
    3.770501997461377*^9, 3.770502009864711*^9}, {3.7705020564756594`*^9, 
    3.770502098274883*^9}},ExpressionUUID->
-  "817e6ef3-e873-46a4-9fb5-8fc836352d9e"],
+  "5f9fa5bd-ff31-4f61-b63f-23751e35d741"],
  " + pbi\", the sum of autonomous household consumption and the private \
 business investment). "
 }], "Text",
@@ -269,8 +262,8 @@ business investment). "
    3.7706726151850433`*^9}, {3.770672647894949*^9, 3.770672648082491*^9}, 
    3.7706726853581944`*^9, {3.7706727788219423`*^9, 3.770672808918843*^9}, {
    3.770676414969001*^9, 
-   3.770676415422126*^9}},ExpressionUUID->"cc8a490d-2104-4823-83d0-\
-169a2771babc"],
+   3.770676415422126*^9}},ExpressionUUID->"8a59b08c-6631-43f9-b273-\
+ff239efa433a"],
 
 Cell["\<\
 The following is to show how this basic idea can be modeled using Mathematica.\
@@ -285,8 +278,8 @@ The following is to show how this basic idea can be modeled using Mathematica.\
    3.7706726151850433`*^9}, {3.770672647894949*^9, 3.770672648082491*^9}, 
    3.7706726853581944`*^9, {3.7706727788219423`*^9, 3.7706728204014344`*^9}, {
    3.770676441500201*^9, 
-   3.770676442093938*^9}},ExpressionUUID->"14412277-e530-4c21-ae9a-\
-5f66684be6a4"],
+   3.770676442093938*^9}},ExpressionUUID->"e8a76edc-5ecc-47ec-bbed-\
+86b6341c5321"],
 
 Cell[CellGroupData[{
 
@@ -367,7 +360,7 @@ Cell[BoxData[
    3.7706672244218955`*^9}, {3.770672257754323*^9, 3.7706722763305464`*^9}, {
    3.7706723167244215`*^9, 3.7706723189744244`*^9}, {3.770673639346467*^9, 
    3.770673649242245*^9}},
- CellLabel->"In[79]:=",ExpressionUUID->"a5962398-d5e0-42f2-b0ab-90f8a6128ca9"],
+ CellLabel->"In[79]:=",ExpressionUUID->"6ebb44b1-403a-47f2-99e9-4133fd4b15d6"],
 
 Cell[BoxData[
  TagBox[
@@ -426,7 +419,7 @@ $CellContext`pbi$$, $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
          Center], {$CellContext`pbi$$, 500, 1000, 100}, 
         Item["private business investment", Alignment -> Center]}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{627., {284., 291.}},
+     ImageSizeCache->{617., {265., 271.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -439,7 +432,7 @@ $CellContext`pbi$$, $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.770672192935766*^9, 3.7706723298197923`*^9, 
   3.7706736613416147`*^9},
- CellLabel->"Out[79]=",ExpressionUUID->"b4f8c065-33ba-4d92-b3f8-be0462dc9480"]
+ CellLabel->"Out[79]=",ExpressionUUID->"fe54e3c7-41a9-4313-8cc9-7bcd4b753d90"]
 }, Open  ]]
 }, Closed]],
 
@@ -451,15 +444,15 @@ Cell["\<\
  CellChangeTimes->{{3.770579948394083*^9, 3.7705799754849963`*^9}, {
    3.7705868425105934`*^9, 3.7705868450887604`*^9}, {3.7705869672509174`*^9, 
    3.7705869781260314`*^9}, 3.770587457282319*^9, {3.770677795379908*^9, 
-   3.7706778017080345`*^9}},ExpressionUUID->"478c1ea0-2c73-4c42-b45c-\
-05f134af3282"],
+   3.7706778017080345`*^9}},ExpressionUUID->"8f754d1d-9878-4f56-92d2-\
+4eafde25f4c7"],
 
 Cell[CellGroupData[{
 
 Cell["1. The case when the government imposes a lump-sum tax", "Subsection",
  CellChangeTimes->{{3.770579990746024*^9, 
-  3.770580012350221*^9}},ExpressionUUID->"e29c8cee-bc01-4d5c-bcd4-\
-f0b7927c146b"],
+  3.770580012350221*^9}},ExpressionUUID->"aff2e63d-4861-4566-880b-\
+fddc2b607613"],
 
 Cell["\<\
 The baseline model captures John Maynard Keynes\[CloseCurlyQuote]s analysis \
@@ -475,8 +468,8 @@ output-income is another important aspect of the Keynesian AD model.\
   3.7705858918564296`*^9, 3.7705860496058903`*^9}, {3.770586082030257*^9, 
   3.770586622387392*^9}, {3.770665898007493*^9, 3.770665937877222*^9}, {
   3.770665977494336*^9, 3.77066614052379*^9}, {3.770676578141431*^9, 
-  3.7706766062352495`*^9}},ExpressionUUID->"08ede6d4-8c9c-47b8-8f09-\
-bdbc9833ba21"],
+  3.7706766062352495`*^9}},ExpressionUUID->"6aaee28e-56a5-43a9-bac6-\
+4ede8afea918"],
 
 Cell["\<\
 This section shows the effect of the government policy on the equilibrium \
@@ -493,8 +486,8 @@ citizen. \
    3.770586622387392*^9}, {3.770665898007493*^9, 3.770665937877222*^9}, {
    3.770665977494336*^9, 3.77066614052379*^9}, 3.7706765834539485`*^9, {
    3.7706766238289957`*^9, 
-   3.7706766532351985`*^9}},ExpressionUUID->"c17a4d66-bef7-4f30-905e-\
-b06bf4db6454"],
+   3.7706766532351985`*^9}},ExpressionUUID->"0dd252b6-ab64-4b07-a6cd-\
+ca4e896e5ac5"],
 
 Cell["\<\
 Here, we are assuming that the government aims to collect a certain maximum \
@@ -508,20 +501,20 @@ In this case, we can work on the following model.\
    3.770586622387392*^9}, {3.770665898007493*^9, 3.770665937877222*^9}, {
    3.770665977494336*^9, 3.77066614052379*^9}, 3.7706765834539485`*^9, {
    3.7706766238289957`*^9, 
-   3.770676661141425*^9}},ExpressionUUID->"c672ae29-2613-46f7-9f00-\
-0d76fee5942c"],
+   3.770676661141425*^9}},ExpressionUUID->"b7e0a43a-f6fd-406a-ac3a-\
+b15c01510d66"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.770584018025349*^9, 3.7705840218065796`*^9}, 
-   3.770671894839068*^9},ExpressionUUID->"db9bd1fb-4394-4342-a953-\
-b32105751abc"],
+   3.770671894839068*^9},ExpressionUUID->"74045d01-7bf6-48e1-add2-\
+4ab3cc54c10b"],
 
 Cell[BoxData["ClearAll"], "Output",
  CellChangeTimes->{3.7705840229784737`*^9, 3.7705846971722584`*^9},
- CellLabel->"Out[53]=",ExpressionUUID->"11ac8495-7583-4215-8d58-e6f9986ff11d"]
+ CellLabel->"Out[53]=",ExpressionUUID->"3bd00289-a76a-45ef-aef2-1477992f0165"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -625,7 +618,7 @@ Cell[BoxData[
    3.770584518311065*^9}, {3.770584633684105*^9, 3.770584640983961*^9}, {
    3.77058489559829*^9, 3.770584910500825*^9}, {3.7706672721602917`*^9, 
    3.770667273410279*^9}, {3.770673728636091*^9, 3.77067378213813*^9}},
- CellLabel->"In[80]:=",ExpressionUUID->"ff50cfce-b75a-4820-a2fc-6b99b0562dee"],
+ CellLabel->"In[80]:=",ExpressionUUID->"4f42b088-6953-48e1-bde3-19afa8d4ed42"],
 
 Cell[BoxData[
  TagBox[
@@ -740,7 +733,7 @@ $CellContext`g$$, $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
    3.7705846577649016`*^9, 3.7705846614413347`*^9}, {3.7705847012073207`*^9, 
    3.770584832299385*^9}, {3.7705849306917143`*^9, 3.770584956966876*^9}, 
    3.7706672775460253`*^9, 3.7706737870929203`*^9},
- CellLabel->"Out[80]=",ExpressionUUID->"bdacaa2f-eaad-4479-a9d1-84e51ce61acc"]
+ CellLabel->"Out[80]=",ExpressionUUID->"8b8a03eb-b427-4c56-9b14-f4be94b7c2c8"]
 }, Open  ]]
 }, Open  ]],
 
@@ -749,8 +742,8 @@ Cell[CellGroupData[{
 Cell["2. The case when the government imposes a marginal tax rate", \
 "Subsection",
  CellChangeTimes->{{3.7705800228698835`*^9, 
-  3.7705800350059786`*^9}},ExpressionUUID->"e7570b9b-46f8-43ad-a9c8-\
-12d234749a83"],
+  3.7705800350059786`*^9}},ExpressionUUID->"85750b41-eea7-44d6-afe2-\
+7123eb203e8c"],
 
 Cell[TextData[{
  "This time, let us suppose that the government imposes a marginal tax rate (\
@@ -763,7 +756,7 @@ should be modified into ",
    RowBox[{"C", "=", 
     RowBox[{
      SubscriptBox["c", "0"], "+"}]}], TraditionalForm]],ExpressionUUID->
-  "ce3f6d14-8612-41f8-bbc8-f1d0fec7ba3f"],
+  "447940f7-408c-4cb1-9cde-c41c95e47e63"],
  Cell[BoxData[
   FormBox[
    RowBox[{" ", 
@@ -771,7 +764,7 @@ should be modified into ",
      SubscriptBox["c", "1"], "*", 
      RowBox[{"(", 
       RowBox[{"Y", "-", "tY", "+", "TR"}], ")"}]}]}], TraditionalForm]],
-  ExpressionUUID->"bb38549d-f93a-44e9-a916-e66cb84e8ee8"],
+  ExpressionUUID->"bef1e171-db67-4c45-9c6c-9a2bcd39bbc2"],
  " and the corresponding multiplier will be ",
  Cell[BoxData[
   FormBox[
@@ -780,21 +773,21 @@ should be modified into ",
      RowBox[{"(", 
       RowBox[{
        SubscriptBox["c", "1"], "-", "t"}], ")"}]}]], TraditionalForm]],
-  ExpressionUUID->"e9af3002-b031-48b3-9b42-f5e545e44a99"],
+  ExpressionUUID->"09c36bec-0013-436c-8d6b-4e99111c3184"],
  "."
 }], "Text",
  CellChangeTimes->{{3.770666165462157*^9, 3.770666271698518*^9}, 
    3.7706663181460075`*^9, {3.770666356972929*^9, 3.7706664299248857`*^9}, 
    3.770666474662098*^9, {3.7706669022525454`*^9, 3.7706670507608876`*^9}, {
    3.7706766892196236`*^9, 3.7706766973445582`*^9}, {3.77067673179827*^9, 
-   3.77067673179827*^9}},ExpressionUUID->"643fcc39-cdd5-43cf-b18a-\
-419b32d86965"],
+   3.77067673179827*^9}},ExpressionUUID->"c860ba3c-b050-4eec-a177-\
+20e65e42c63d"],
 
 Cell[BoxData[
  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.7706663003865156`*^9, 3.770666303105263*^9}, 
    3.7706719000993195`*^9},
- CellLabel->"In[63]:=",ExpressionUUID->"d12c8904-ce3a-4d06-9585-2ec614fba407"],
+ CellLabel->"In[63]:=",ExpressionUUID->"f8fccfe4-0b50-4017-9454-846ce43580e9"],
 
 Cell[CellGroupData[{
 
@@ -901,7 +894,7 @@ Cell[BoxData[
    3.7706665650721216`*^9}, {3.770666618090991*^9, 3.770666639667039*^9}, {
    3.7706667395045958`*^9, 3.7706667473195257`*^9}, {3.7706672961367345`*^9, 
    3.7706672965742316`*^9}, {3.770673818502081*^9, 3.7706738536220026`*^9}},
- CellLabel->"In[81]:=",ExpressionUUID->"eb9036fe-0ce4-4544-beb7-b2e5910cf133"],
+ CellLabel->"In[81]:=",ExpressionUUID->"872de438-afad-41dd-bdb0-aec747873090"],
 
 Cell[BoxData[
  TagBox[
@@ -1019,7 +1012,7 @@ $CellContext`g$$, $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
    3.7706666247349367`*^9, 3.770666643908328*^9}, {3.770666684294036*^9, 
    3.7706666978973827`*^9}, 3.7706667509633336`*^9, 3.770667303402582*^9, 
    3.7706738605212913`*^9},
- CellLabel->"Out[81]=",ExpressionUUID->"80c6b77a-a0b6-44fb-b7ad-6ebfeaae2329"]
+ CellLabel->"Out[81]=",ExpressionUUID->"741e6776-5e60-4336-984f-8925c432a074"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1031,8 +1024,8 @@ marginal tax rate\
 \>", "Subsection",
  CellChangeTimes->{{3.7705800441060514`*^9, 3.770580066661042*^9}, {
   3.770677848254882*^9, 
-  3.770677858708083*^9}},ExpressionUUID->"8471c5ed-d38d-4ebb-908a-\
-27e595f305ea"],
+  3.770677858708083*^9}},ExpressionUUID->"45843915-b97b-4bd6-a78b-\
+aa76fdf90e65"],
 
 Cell[TextData[{
  "As part of our further thought experiment, let us now consider the case \
@@ -1056,7 +1049,7 @@ when the government adopts a combination of the lump-sum (\
     3.770667944205689*^9, {3.7706680151411705`*^9, 3.770668081115383*^9}, 
     3.7706681584805183`*^9, {3.770668240406497*^9, 3.770668241078451*^9}, {
     3.770673927632946*^9, 3.770673986040861*^9}},ExpressionUUID->
-  "a3d03eeb-4354-4ffc-844a-a43ba82d1f8f"],
+  "ddcd7531-1f2a-4a1b-ad6a-fb7182f48250"],
  "\[CloseCurlyDoubleQuote]) and marginal tax rate (\[OpenCurlyDoubleQuote]",
  Cell[BoxData[
   SubscriptBox["t", "1"]],
@@ -1076,19 +1069,19 @@ when the government adopts a combination of the lump-sum (\
     3.770667944205689*^9, {3.7706680151411705`*^9, 3.770668081115383*^9}, 
     3.7706681584805183`*^9, {3.770668240406497*^9, 3.770668241078451*^9}, {
     3.770673927632946*^9, 3.770673986040861*^9}},ExpressionUUID->
-  "391f827e-06c8-460a-bc0d-98626e0472c8"],
+  "444e523b-4dd5-4149-ad7b-87eda1ff78b7"],
  "\[CloseCurlyDoubleQuote]). In this case,  "
 }], "Text",
  CellChangeTimes->{{3.7706673633123026`*^9, 3.770667530858591*^9}, {
   3.77067678092327*^9, 3.7706768629857545`*^9}, {3.7706769014082623`*^9, 
-  3.7706769027831836`*^9}},ExpressionUUID->"c838540c-9294-407b-a029-\
-16bdeb4d4c05"],
+  3.7706769027831836`*^9}},ExpressionUUID->"0709fcea-65cf-4d91-a198-\
+5e2a0523f8ec"],
 
 Cell[BoxData[
  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.7706676274435472`*^9, 3.7706676296779137`*^9}, 
    3.770673903466549*^9},
- CellLabel->"In[82]:=",ExpressionUUID->"77909caa-36dd-4166-bbb4-422547a1babe"],
+ CellLabel->"In[82]:=",ExpressionUUID->"e01aca75-d167-48eb-9ef7-7b66039a17e8"],
 
 Cell[CellGroupData[{
 
@@ -1211,7 +1204,7 @@ Cell[BoxData[
    3.7706681584805183`*^9, {3.770668240406497*^9, 3.770668241078451*^9}, {
    3.770673927632946*^9, 3.770673986040861*^9}, {3.7706769221582127`*^9, 
    3.7706769669081826`*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"09337637-dd72-4158-9509-2d661fac434f"],
+ CellLabel->"In[1]:=",ExpressionUUID->"14420fe6-de4e-439b-9dd3-abf9cef5049d"],
 
 Cell[BoxData[
  TagBox[
@@ -1335,7 +1328,7 @@ $CellContext`pbi$$ + $CellContext`g$$, $CellContext`Y}, {$CellContext`Y, 0,
  CellChangeTimes->{{3.770668087493553*^9, 3.770668114709231*^9}, 
    3.7706681642663794`*^9, 3.7706682518371987`*^9, 3.770673990030473*^9, 
    3.770676971345687*^9},
- CellLabel->"Out[1]=",ExpressionUUID->"f052ab3c-395c-4c0a-8147-3c6734750487"]
+ CellLabel->"Out[1]=",ExpressionUUID->"dea20c25-b985-4e7d-8edb-17da5ae54e4e"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
@@ -1347,8 +1340,8 @@ Cell["\<\
 \>", "Section",
  CellChangeTimes->{{3.77058008236775*^9, 3.7705801135724545`*^9}, {
   3.7706707770767913`*^9, 
-  3.7706707775564947`*^9}},ExpressionUUID->"50f205f8-369f-4dad-9778-\
-9ca6ce2faf65"],
+  3.7706707775564947`*^9}},ExpressionUUID->"161f2998-7b71-4697-a754-\
+0d309c1f1a39"],
 
 Cell[TextData[{
  "If the economy is open to international sector, meaning that if it engages \
@@ -1361,12 +1354,12 @@ variable, X, denotes the total volume of export, the parameter, ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["c", "2"], TraditionalForm]],ExpressionUUID->
-  "a049d527-0938-4027-a2c5-c22d68927187"],
+  "16ad1661-30e6-4a8d-b44f-dd303ee46909"],
  ", captures the marginal propensity to consume for imported goods. Thus, ",
  Cell[BoxData[
   FormBox[
    SubscriptBox["c", "2"], TraditionalForm]],ExpressionUUID->
-  "b2ffb1e8-b621-499c-b739-ec0430f3c4cd"],
+  "f06caf0b-d381-4cd3-80e6-93c758fd4465"],
  "*Y will represents the variable volume of consumption expenditure made on \
 imported goods. And, for this reason, the existing parameter, ",
  Cell[BoxData[
@@ -1388,7 +1381,7 @@ imported goods. And, for this reason, the existing parameter, ",
     3.7706700678067226`*^9, 3.7706700853092513`*^9}, {3.770670157684041*^9, 
     3.770670212400231*^9}, {3.770670248727559*^9, 3.7706702637842145`*^9}, 
     3.7706703007165613`*^9},ExpressionUUID->
-  "3804e4b0-3b9c-41df-9c1d-fea6075881d4"],
+  "6653028a-19dd-4da6-842a-43f64504c288"],
  ", now captures marginal propensity to consume for domestically produced \
 goods. The product of ",
  Cell[BoxData[
@@ -1411,7 +1404,7 @@ goods. The product of ",
     3.7706700678067226`*^9, 3.7706700853092513`*^9}, {3.770670157684041*^9, 
     3.770670212400231*^9}, {3.770670248727559*^9, 3.7706702637842145`*^9}, 
     3.7706703007165613`*^9},ExpressionUUID->
-  "3d7fb580-66ae-47b1-8ae9-63cb5f8f8343"],
+  "1465a39a-5227-4b56-b77d-d66c42591315"],
  " then represents the variable portion of household consumption on domestic \
 goods."
 }], "Text",
@@ -1421,14 +1414,14 @@ goods."
   3.770670425136352*^9, 3.770670436234363*^9}, {3.7706704729088535`*^9, 
   3.7706706775137873`*^9}, {3.7706770210800886`*^9, 3.770677041767638*^9}, {
   3.7706770901431427`*^9, 
-  3.7706771240181446`*^9}},ExpressionUUID->"1c184b88-e411-49d8-9a22-\
-98d7b5befe8c"],
+  3.7706771240181446`*^9}},ExpressionUUID->"cf75508f-35b8-49f8-91c7-\
+b3ccbf91c1a3"],
 
 Cell[BoxData[
  RowBox[{"ClearAll", "[", "\"\<Global`*\>\"", "]"}]], "Input",
  CellChangeTimes->{{3.770669150634771*^9, 3.770669152622043*^9}, 
    3.7706718715440435`*^9},
- CellLabel->"In[84]:=",ExpressionUUID->"6d653038-beab-456f-ae74-14af3d2c06c1"],
+ CellLabel->"In[84]:=",ExpressionUUID->"830a240d-9d3e-4f7d-8ac2-5913325d4882"],
 
 Cell[CellGroupData[{
 
@@ -1564,7 +1557,7 @@ Cell[BoxData[
    3.770670212400231*^9}, {3.770670248727559*^9, 3.7706702637842145`*^9}, 
    3.7706703007165613`*^9, {3.7706740391022873`*^9, 3.7706740887085457`*^9}, {
    3.770674119499477*^9, 3.770674119890108*^9}},
- CellLabel->"In[2]:=",ExpressionUUID->"2e135320-18c6-4a67-8d8f-b20527013b5a"],
+ CellLabel->"In[2]:=",ExpressionUUID->"70802395-2073-455d-af72-4b2a9187cb0a"],
 
 Cell[BoxData[
  TagBox[
@@ -1607,7 +1600,7 @@ Cell[BoxData[
       Hold[
        Item["export", Alignment -> Center]], 
       Manipulate`Dump`ThisIsNotAControl}}, Typeset`size$$ = {
-    566., {151., 156.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    454., {120., 125.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = True, $CellContext`c0$5704$$ = 
     0, $CellContext`c1$5705$$ = 0, $CellContext`c2$5706$$ = 
     0, $CellContext`pbi$5707$$ = 0, $CellContext`g$5708$$ = 
@@ -1687,7 +1680,7 @@ $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
          5000, 100}, 
         Item["export", Alignment -> Center]}, "Options" :> {}, 
       "DefaultOptions" :> {}],
-     ImageSizeCache->{937., {270., 277.}},
+     ImageSizeCache->{749., {236., 242.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1703,7 +1696,7 @@ $CellContext`Y}, {$CellContext`Y, 0, 10000}, PlotLabel ->
    3.7706699661604247`*^9, 3.770670231922179*^9, 3.770670272621877*^9, 
    3.7706703071987906`*^9, {3.7706741013860073`*^9, 3.770674125311981*^9}, 
    3.770677185424386*^9},
- CellLabel->"Out[2]=",ExpressionUUID->"e1f481b6-87be-4a37-bbd1-5cb841d55048"]
+ CellLabel->"Out[2]=",ExpressionUUID->"0dcfbe92-d16d-4210-98e8-39c688ad8ef0"]
 }, Open  ]]
 }, Closed]],
 
@@ -1711,8 +1704,8 @@ Cell[CellGroupData[{
 
 Cell["5. Conclusion", "Section",
  CellChangeTimes->{{3.7706758621546865`*^9, 
-  3.770675867076585*^9}},ExpressionUUID->"55bd38de-69d9-46a3-88d3-\
-843e9fcd495f"],
+  3.770675867076585*^9}},ExpressionUUID->"237fe375-f6be-4dd5-8d50-\
+09b8d62d2443"],
 
 Cell["\<\
 In this note, we have examined the likely effect of the change in the \
@@ -1731,8 +1724,8 @@ implication of the Keynesian aggregate demand model.\
 \>", "Text",
  CellChangeTimes->{{3.770675897889064*^9, 3.7706761414678164`*^9}, {
   3.7706778973955326`*^9, 
-  3.7706784321942034`*^9}},ExpressionUUID->"c211203e-b3a5-44a0-817d-\
-38f4158d126b"],
+  3.7706784321942034`*^9}},ExpressionUUID->"bf0db483-5c8d-461e-9252-\
+d3e97b313ad5"],
 
 Cell["\<\
 The next step in this Mathematica modeling exercise is to (1) estimate the \
@@ -1750,14 +1743,25 @@ show the pattern of dynamic adjustment processes.\
  CellChangeTimes->{{3.770675897889064*^9, 3.7706761414678164`*^9}, {
   3.7706778973955326`*^9, 3.770678483725444*^9}, {3.7706785217885513`*^9, 
   3.770678813304867*^9}, {3.7706788490860667`*^9, 
-  3.7706789140241203`*^9}},ExpressionUUID->"98df769e-0370-4650-ac9a-\
-3aeac84005d2"]
+  3.7706789140241203`*^9}},ExpressionUUID->"aba41c55-dfb5-4b38-9338-\
+5db83acea375"]
 }, Closed]]
 }, Open  ]]
 },
-WindowSize->{1348, 696},
-WindowMargins->{{80, Automatic}, {Automatic, 30}},
-Magnification->1.25,
+WindowSize->{976, 696},
+WindowMargins->{{-1, Automatic}, {Automatic, 0}},
+DockedCells->{
+  Cell[
+   TextData[{
+     StyleBox["  WOLFRAM ", 
+      RGBColor[0.97, 0.83, 0.35], FontFamily -> "Source Sans Pro", FontWeight -> 
+      Bold, FontSize -> 40], 
+     StyleBox["SUMMER SCHOOL", 
+      GrayLevel[1], FontFamily -> "Source Sans Pro", FontSize -> 40], 
+     StyleBox[" 2019", 
+      RGBColor[0.97, 0.83, 0.35], FontFamily -> "Source Sans Pro", FontSize -> 
+      40]}], CellFrameMargins -> 10, Background -> 
+   RGBColor[0.12, 0.14, 0.15]]},
 FrontEndVersion->"12.0 for Microsoft Windows (64-bit) (April 11, 2019)",
 StyleDefinitions->"Default.nb"
 ]
@@ -1765,80 +1769,88 @@ StyleDefinitions->"Default.nb"
 
 (* Internal cache information *)
 (*CellTagsOutline
-CellTagsIndex->{}
+CellTagsIndex->{
+ "Title"->{
+  Cell[580, 22, 476, 6, 156, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+   CellTags->"Title"]}
+ }
 *)
 (*CellTagsIndex
-CellTagsIndex->{}
+CellTagsIndex->{
+ {"Title", 83250, 1772}
+ }
 *)
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[583, 22, 1489, 21, 196, "Title",ExpressionUUID->"255f30a9-6e03-48c4-863c-9f42e615704d"],
+Cell[580, 22, 476, 6, 156, "Title",ExpressionUUID->"49ab34ee-bfd5-49f5-beef-400d3cc456dd",
+ CellTags->"Title"],
+Cell[1059, 30, 402, 6, 34, "Text",ExpressionUUID->"94536f76-3fd2-4bf6-b228-fa93ec9acae9"],
 Cell[CellGroupData[{
-Cell[2097, 47, 185, 3, 83, "Section",ExpressionUUID->"3a43a84e-cf5b-4a6a-b33c-3275f212119f"],
-Cell[2285, 52, 1944, 29, 293, "Text",ExpressionUUID->"a17a3bae-a42c-44d9-96a6-3c100e43538a"]
+Cell[1486, 40, 185, 3, 67, "Section",ExpressionUUID->"bb9dd0da-48ea-4aa1-8857-e7194a9ae34b"],
+Cell[1674, 45, 1944, 29, 254, "Text",ExpressionUUID->"212ce15c-4959-4d74-b96d-74b49e5f8891"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[4266, 86, 477, 7, 64, "Section",ExpressionUUID->"35a5f7ab-b7d8-436c-a09a-06f5ce87ba87"],
-Cell[4746, 95, 2233, 41, 182, "Text",ExpressionUUID->"58b4840b-0d3f-4a7d-90a2-5403758b32f7"],
-Cell[6982, 138, 450, 13, 35, "Input",ExpressionUUID->"40294b4e-95d2-40f2-95f8-99a5277c9f61"],
-Cell[7435, 153, 2260, 47, 127, "Text",ExpressionUUID->"f17a3b37-e006-480e-a2cc-8a9cc261958b"],
-Cell[9698, 202, 1118, 38, 35, "Input",ExpressionUUID->"e5764151-2249-4a43-99ba-2207e394ab86"],
-Cell[10819, 242, 1648, 30, 71, "Text",ExpressionUUID->"cc8a490d-2104-4823-83d0-169a2771babc"],
-Cell[12470, 274, 889, 14, 43, "Text",ExpressionUUID->"14412277-e530-4c21-ae9a-5f66684be6a4"],
+Cell[3655, 79, 477, 7, 53, "Section",ExpressionUUID->"ee51fc41-7f5e-4d31-b8be-b567da419c5c"],
+Cell[4135, 88, 2233, 41, 144, "Text",ExpressionUUID->"f1fcc30c-6e7f-44e3-92f9-69a2395e46b1"],
+Cell[6371, 131, 450, 13, 28, "Input",ExpressionUUID->"cb512737-81dd-4bac-abf0-3597c15d0a85"],
+Cell[6824, 146, 2260, 47, 100, "Text",ExpressionUUID->"6ecca66e-8890-445e-a855-43fb54589d11"],
+Cell[9087, 195, 1118, 38, 28, "Input",ExpressionUUID->"74db393e-3585-4f26-9417-ec4555f60ef0"],
+Cell[10208, 235, 1648, 30, 78, "Text",ExpressionUUID->"8a59b08c-6631-43f9-b273-ff239efa433a"],
+Cell[11859, 267, 889, 14, 34, "Text",ExpressionUUID->"e8a76edc-5ecc-47ec-bbed-86b6341c5321"],
 Cell[CellGroupData[{
-Cell[13384, 292, 4002, 77, 204, "Input",ExpressionUUID->"a5962398-d5e0-42f2-b0ab-90f8a6128ca9"],
-Cell[17389, 371, 3444, 70, 598, "Output",ExpressionUUID->"b4f8c065-33ba-4d92-b3f8-be0462dc9480"]
+Cell[12773, 285, 4002, 77, 162, "Input",ExpressionUUID->"6ebb44b1-403a-47f2-99e9-4133fd4b15d6"],
+Cell[16778, 364, 3444, 70, 555, "Output",ExpressionUUID->"fe54e3c7-41a9-4313-8cc9-7bcd4b753d90"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[20882, 447, 395, 7, 64, "Section",ExpressionUUID->"478c1ea0-2c73-4c42-b45c-05f134af3282"],
+Cell[20271, 440, 395, 7, 53, "Section",ExpressionUUID->"8f754d1d-9878-4f56-92d2-4eafde25f4c7"],
 Cell[CellGroupData[{
-Cell[21302, 458, 202, 3, 67, "Subsection",ExpressionUUID->"e29c8cee-bc01-4d5c-bcd4-f0b7927c146b"],
-Cell[21507, 463, 990, 15, 127, "Text",ExpressionUUID->"08ede6d4-8c9c-47b8-8f09-bdbc9833ba21"],
-Cell[22500, 480, 952, 16, 99, "Text",ExpressionUUID->"c17a4d66-bef7-4f30-905e-b06bf4db6454"],
-Cell[23455, 498, 752, 13, 99, "Text",ExpressionUUID->"c672ae29-2613-46f7-9f00-0d76fee5942c"],
+Cell[20691, 451, 202, 3, 53, "Subsection",ExpressionUUID->"aff2e63d-4861-4566-880b-fddc2b607613"],
+Cell[20896, 456, 990, 15, 122, "Text",ExpressionUUID->"6aaee28e-56a5-43a9-bac6-4ede8afea918"],
+Cell[21889, 473, 952, 16, 78, "Text",ExpressionUUID->"0dd252b6-ab64-4b07-a6cd-ca4e896e5ac5"],
+Cell[22844, 491, 752, 13, 100, "Text",ExpressionUUID->"b7e0a43a-f6fd-406a-ac3a-b15c01510d66"],
 Cell[CellGroupData[{
-Cell[24232, 515, 227, 4, 35, "Input",ExpressionUUID->"db9bd1fb-4394-4342-a953-b32105751abc"],
-Cell[24462, 521, 182, 2, 40, "Output",ExpressionUUID->"11ac8495-7583-4215-8d58-e6f9986ff11d"]
+Cell[23621, 508, 227, 4, 28, "Input",ExpressionUUID->"74045d01-7bf6-48e1-add2-4ab3cc54c10b"],
+Cell[23851, 514, 182, 2, 40, "Output",ExpressionUUID->"3bd00289-a76a-45ef-aef2-1477992f0165"]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[24681, 528, 4671, 99, 294, "Input",ExpressionUUID->"ff50cfce-b75a-4820-a2fc-6b99b0562dee"],
-Cell[29355, 629, 5464, 113, 444, "Output",ExpressionUUID->"bdacaa2f-eaad-4479-a9d1-84e51ce61acc"]
+Cell[24070, 521, 4671, 99, 272, "Input",ExpressionUUID->"4f42b088-6953-48e1-bde3-19afa8d4ed42"],
+Cell[28744, 622, 5464, 113, 440, "Output",ExpressionUUID->"8b8a03eb-b427-4c56-9b14-f4be94b7c2c8"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[34868, 748, 213, 4, 67, "Subsection",ExpressionUUID->"e7570b9b-46f8-43ad-a9c8-12d234749a83"],
-Cell[35084, 754, 1449, 36, 107, "Text",ExpressionUUID->"643fcc39-cdd5-43cf-b18a-419b32d86965"],
-Cell[36536, 792, 251, 4, 35, "Input",ExpressionUUID->"d12c8904-ce3a-4d06-9585-2ec614fba407"],
+Cell[34257, 741, 213, 4, 53, "Subsection",ExpressionUUID->"85750b41-eea7-44d6-afe2-7123eb203e8c"],
+Cell[34473, 747, 1449, 36, 85, "Text",ExpressionUUID->"c860ba3c-b050-4eec-a177-20e65e42c63d"],
+Cell[35925, 785, 251, 4, 28, "Input",ExpressionUUID->"f8fccfe4-0b50-4017-9454-846ce43580e9"],
 Cell[CellGroupData[{
-Cell[36812, 800, 4886, 103, 300, "Input",ExpressionUUID->"eb9036fe-0ce4-4544-beb7-b2e5910cf133"],
-Cell[41701, 905, 5638, 116, 444, "Output",ExpressionUUID->"80c6b77a-a0b6-44fb-b7ad-6ebfeaae2329"]
+Cell[36201, 793, 4886, 103, 276, "Input",ExpressionUUID->"872de438-afad-41dd-bdb0-aec747873090"],
+Cell[41090, 898, 5638, 116, 440, "Output",ExpressionUUID->"741e6776-5e60-4336-984f-8925c432a074"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[47388, 1027, 304, 7, 67, "Subsection",ExpressionUUID->"8471c5ed-d38d-4ebb-908a-27e595f305ea"],
-Cell[47695, 1036, 3080, 48, 71, "Text",ExpressionUUID->"c838540c-9294-407b-a029-16bdeb4d4c05"],
-Cell[50778, 1086, 251, 4, 35, "Input",ExpressionUUID->"77909caa-36dd-4166-bbb4-422547a1babe"],
+Cell[46777, 1020, 304, 7, 53, "Subsection",ExpressionUUID->"45843915-b97b-4bd6-a78b-aa76fdf90e65"],
+Cell[47084, 1029, 3080, 48, 56, "Text",ExpressionUUID->"0709fcea-65cf-4d91-a198-5e2a0523f8ec"],
+Cell[50167, 1079, 251, 4, 28, "Input",ExpressionUUID->"e01aca75-d167-48eb-9ef7-7b66039a17e8"],
 Cell[CellGroupData[{
-Cell[51054, 1094, 5734, 119, 348, "Input",ExpressionUUID->"09337637-dd72-4158-9509-2d661fac434f"],
-Cell[56791, 1215, 5850, 122, 506, "Output",ExpressionUUID->"f052ab3c-395c-4c0a-8147-3c6734750487"]
+Cell[50443, 1087, 5734, 119, 295, "Input",ExpressionUUID->"14420fe6-de4e-439b-9dd3-abf9cef5049d"],
+Cell[56180, 1208, 5850, 122, 502, "Output",ExpressionUUID->"dea20c25-b985-4e7d-8edb-17da5ae54e4e"]
 }, Open  ]]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[62702, 1344, 279, 6, 64, "Section",ExpressionUUID->"50f205f8-369f-4dad-9778-9ca6ce2faf65"],
-Cell[62984, 1352, 4443, 72, 210, "Text",ExpressionUUID->"1c184b88-e411-49d8-9a22-98d7b5befe8c"],
-Cell[67430, 1426, 249, 4, 35, "Input",ExpressionUUID->"6d653038-beab-456f-ae74-14af3d2c06c1"],
+Cell[62091, 1337, 279, 6, 53, "Section",ExpressionUUID->"161f2998-7b71-4697-a754-0d309c1f1a39"],
+Cell[62373, 1345, 4443, 72, 166, "Text",ExpressionUUID->"cf75508f-35b8-49f8-91c7-b3ccbf91c1a3"],
+Cell[66819, 1419, 249, 4, 28, "Input",ExpressionUUID->"830a240d-9d3e-4f7d-8ac2-5913325d4882"],
 Cell[CellGroupData[{
-Cell[67704, 1434, 6352, 132, 372, "Input",ExpressionUUID->"2e135320-18c6-4a67-8d8f-b20527013b5a"],
-Cell[74059, 1568, 6514, 137, 570, "Output",ExpressionUUID->"e1f481b6-87be-4a37-bbd1-5cb841d55048"]
+Cell[67093, 1427, 6352, 132, 314, "Input",ExpressionUUID->"70802395-2073-455d-af72-4b2a9187cb0a"],
+Cell[73448, 1561, 6514, 137, 497, "Output",ExpressionUUID->"0dcfbe92-d16d-4210-98e8-39c688ad8ef0"]
 }, Open  ]]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[80622, 1711, 160, 3, 64, "Section",ExpressionUUID->"55bd38de-69d9-46a3-88d3-843e9fcd495f"],
-Cell[80785, 1716, 1168, 18, 210, "Text",ExpressionUUID->"c211203e-b3a5-44a0-817d-38f4158d126b"],
-Cell[81956, 1736, 1118, 17, 182, "Text",ExpressionUUID->"98df769e-0370-4650-ac9a-3aeac84005d2"]
+Cell[80011, 1704, 160, 3, 53, "Section",ExpressionUUID->"237fe375-f6be-4dd5-8d50-09b8d62d2443"],
+Cell[80174, 1709, 1168, 18, 166, "Text",ExpressionUUID->"bf0db483-5c8d-461e-9252-d3e97b313ad5"],
+Cell[81345, 1729, 1118, 17, 144, "Text",ExpressionUUID->"aba41c55-dfb5-4b38-9338-5db83acea375"]
 }, Closed]]
 }, Open  ]]
 }
